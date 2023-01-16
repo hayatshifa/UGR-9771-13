@@ -1,0 +1,330 @@
+/* header */
+header {
+  background-color: rgb(255, 255, 255);
+}
+nav {
+  display: flex;
+  flex-direction: column;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.upper {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.4em 1em;
+  background-color: rgb(255, 255, 255);
+  align-items: center;
+  /* box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; */
+}
+@media screen and (min-width: 720px) {
+    .upper{
+      padding: 0.4em 4em
+    }
+}
+#logo-image {
+  height: 60px;
+}
+.right {
+  margin-left: auto;
+  display: flex;
+}
+.lower {
+  margin: 0.5em;
+  display: flex;
+  flex-wrap: nowrap;
+  
+}
+.links {
+  padding: 0.5em 0.4em;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: rgb(0, 0, 0);
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+/* search box */
+.search-form{
+  display: flex;
+  border: 1px solid black;
+  color: white;
+}
+#search__input {
+  padding: 0.2em;
+  margin: 0;
+  font-size: 0.8rem;
+  outline: none;
+  padding-left: 1em;
+  border: none;
+  color: white;
+}
+
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+.links:hover {
+  background-color: rgb(197, 204, 207);
+}
+
+/* slider */
+.mySlides {
+  display: none;
+}
+img {
+  vertical-align: middle;
+}
+
+/* Slideshow container */
+.slideshow__container {
+  position: relative;
+  margin: auto;
+}
+.mySlides img {
+  max-height: 500px;
+  object-fit: cover;
+}
+.mySlides {
+  max-height: 520px;
+  object-fit: contain;
+}
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: green;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  background-color: white;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.text {
+  color: rgb(52, 52, 52);
+  font-size: 15px;
+  padding: 8px 12px;
+  bottom: 8px;
+  text-align: center;
+  background-color: rgb(207, 207, 207);
+  
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+.mySlides {
+  position: relative;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev,
+  .next,
+  .text {
+    font-size: 11px;
+  }
+}
+.admin__link{
+  text-decoration: none;
+  color: black;
+}
+.admin__link:focus{
+  color: black;
+}
+main {
+  padding: 3em;
+}
+section {
+  display: flex;
+  flex-direction: column;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  margin: 2em 1em;
+  padding-bottom: 1em;
+}
+.heritage__image div picture img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+}
+.main__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.heritage__title {
+  font-weight: 700;
+  letter-spacing: 1px;
+  font-size: 1.1rem;
+}
+.heritag__stars {
+  font-weight: 300;
+}
+
+.bottom__section {
+  padding: 0.5em;
+}
+
+.heritag__price {
+  font-weight: 300;
+  font-size: 13px;
+}
+
+.reserve-button,
+#submitt {
+  border: none;
+  background-color: rgb(255, 255, 255);;
+  color: rgb(0, 0, 0);
+  outline: 1px solid rgb(0, 0, 0);
+  padding: 0.3em 1em;
+  cursor: pointer;
+}
+#submitt {
+  background-color: rgb(0, 0, 0);
+  color: white;
+}
+.reserve-button:hover,
+.reserve-button:focus {
+  background-color: rgb(0, 0, 0);
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+  color: rgb(255, 255, 255);
+}
+
+.reserve-button:active {
+  background-color: #000000;
+  box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
+  transform: translateY(0);
+}
+.button__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.message {
+  display: flex;
+  justify-content: center;
+}
+.message hgroup {
+  text-align: center;
+}
+.message hgroup p {
+  text-align: justify;
+}
+
+.footer__item {
+  color: black;
+}
+
+.footer__upper {
+  display: flex;
+  justify-content: center;
+  max-width: 1040px;
+  margin: auto;
+  flex-wrap: wrap;
+}
+.footer__item {
+  display: block;
+  font-family: sans-serif;
+  margin: 1em 4em;
+  text-align: center;
+}
+.footer__item p {
+  font-weight: 300;
+  font-family: sans-serif;
+  padding-left: 0.5em;
+  cursor: pointer;
+}
+.footer__item p:hover{
+  color: #00596d;
+}
+.footer__bottom {
+  display: flex;
+  justify-content: center;
+  font-size: 10px;
+  background-color: #f0bda7;
+  padding: 1em;
+}
+
+.footer__bottom a {
+  text-decoration: none;
+  text-align: center;
+  color: black;
+}
+footer {
+  background-color: #FAF1ED;
+  
+}
+.footer-bottom a:hover{
+  color: #00596d;
+  cursor: pointer;
+}
+@media screen and (min-width: 720px) {
+  .footer-upper {
+    justify-content: space-between;
+  }
+  .footer-item {
+    text-align: justify;
+  }
+  .footer-item  p{
+    cursor: pointer;
+    
+  }
+  .footer-item  p:hover{
+    color: #5296A5;
+  }
+}
+#current__page, #current__page:hover{
+  background-color: black;
+  color: white;
+}
+
+
+/* Site Detail page */

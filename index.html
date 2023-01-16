@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Tour Ethiopia. For Day Trips & Excursion</title>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+    />
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <link rel="icon" type="image/x-icon" href="./images/page_icon.ico" />
+    <meta http-equiv="content-language" content="en" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="icon" type="image/x-icon" href="./images/page_icon.ico" />
+  </head>
+
+  <body>
+    <header>
+      <div>
+        <nav>
+          <div class="upper">
+            <a href="/">
+              <picture>
+                <img
+                  id="logo-image"
+                  src="./images/tour_ethiopia_logo.png"
+                  alt="Tour Ethiopia logo"
+                />
+              </picture>
+            </a>
+            <div>
+              <form
+                role="search"
+                action="/Search"
+                id="search-box"
+                title="search box"
+                class="search-form"
+              >
+              <label for="search__input"  style="color: rgb(0, 0, 0); display:none; background-color: rgb(255, 255, 255);" >search</label>
+                <input id="search__input" type="text"  placeholder="Search" />
+
+                <button
+                  type="submit"
+                  formaction="/Search"
+                  title="submit"
+                  id="submitt"
+                  name="submit"
+                  aria-label="Search"
+                >
+                  Search
+                </button>
+              </form>
+            </div>
+          </div>
+          <div class="lower">
+            <div class="right">
+              <a class="links" href="/index.html" id="current__page"> Home </a>
+              <a class="links" href="/contact.html"> Contact-Us </a>
+              <a class="links" href="/about.html"> About Us </a>
+              <a class="links" href="/"> Packages </a>
+              <a class="admin__link" href="./adminstration.html"
+                > .<i class="fa-solid fa-lock"></i
+              ></a>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <div>
+      <div class="slideshow__container">
+        <div class="mySlides fade">
+          <img
+            src="./images/park.jpg"
+            alt="cover image of lalibela"
+            style="width: 100%; height: 800px; object-fit: cover"
+          />
+          <div class="text">Parks</div>
+        </div>
+
+        <div class="mySlides fade">
+          <img
+            src="./images/bale mountains.jpg"
+            alt="Mountain image in Bale"
+            style="width: 100%; height: 800px; object-fit: cover"
+          />
+          <div class="text">Bale Mountains</div>
+        </div>
+
+        <div class="mySlides fade">
+          <img
+            src="./images/addis ababa park image.jpg"
+            alt="park image in Addis Ababa"
+            style="width: 100%; height: 800px; object-fit: cover"
+          />
+          <div class="text">Addis Ababa Parks</div>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+      </div>
+      <br />
+
+      <div style="text-align: center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
+    </div>
+
+    <main>
+      <h1 hidden>Home</h1>
+      <div class="main__container">
+        <section aria-label="heritages">
+          <div>
+            <div class="heritage__image">
+              <div>
+                <picture>
+                  <img
+                    src="./images/lalibela.jpg"
+                    
+                    alt="lalibela photo"
+                    role="hetritage picture"
+                    loading="lazy"
+                  />
+                </picture>
+              </div>
+            </div>
+            <div class="bottom__section">
+              <div>
+                <span
+                  id="title"
+                  
+                  class="heritage__title"
+                  >Lalibela Rock hewn churches</span
+                >
+              </div>
+              <div>
+                <span class="heritage__stars" aria-label="customers rating"
+                  >⭐️⭐️⭐️⭐️⭐️</span
+                >
+              </div>
+              <div>
+                <b class="heritage__price" aria-label="currency">USD $$</b>
+                <span class="heritage__price" aria-label="one time package price"
+                  >999.99</span
+                >
+              </div>
+              <div class="button__container">
+                <a href="/siteDetail.html">
+                  <button class="reserve-button" aria-label="reserve a spot">
+                    Reserve
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section aria-label="heritages">
+          <div>
+            <div class="heritage__image">
+              <div>
+                <picture>
+                  <img
+                    src="./images/bale mountains.jpg"
+                    alt="bale moountains photo"
+                    role="hetritage picture"
+                    loading="lazy"
+                  />
+                </picture>
+              </div>
+            </div>
+            <div class="bottom__section">
+              <div>
+                <span id="title" aria-label="name of the heritage"
+                  >Bale mountains</span
+                >
+              </div>
+              <div>
+                <span class="heritage__stars" aria-label="customers rating"
+                  >⭐⭐⭐⭐⭐</span
+                >
+              </div>
+              <div>
+                <b class="heritage__price" aria-label="currency">USD $$</b>
+                <span class="heritage__price" aria-label="one time package price"
+                  >499.99</span
+                >
+              </div>
+              <div class="button__container">
+                <a href="/siteDetail.html">
+                  <button class="reserve-button" aria-label="reserve a spot">
+                    Reserve
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section aria-label="heritages">
+          <div>
+            <div class="heritage__image">
+              <div>
+                <picture>
+                  <img
+                    src="./images/konso.jpg"
+                    aria-labelledby="title"
+                    alt="konso irrigation photo"
+                    role="hetritage picture"
+                    loading="lazy"
+                  />
+                </picture>
+              </div>
+            </div>
+            <div class="bottom__section">
+              <div>
+                <span id="title" aria-label="name of the heritage"
+                  >Konso irrigation</span
+                >
+              </div>
+              <div>
+                <span class="heritage__stars" aria-label="customers rating"
+                  >⭐⭐⭐⭐⭐</span
+                >
+              </div>
+              <div>
+                <b class="heritage__price" aria-label="currency">USD $$</b>
+                <span class="heritage__price" aria-label="one time package price"
+                  >679.99</span
+                >
+              </div>
+
+              <div class="button__container">
+                <a href="/siteDetail.html">
+                  <button class="reserve-button" aria-label="reserve a spot">
+                    Reserve
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section aria-label="heritages">
+          <div>
+            <div class="heritage__image">
+              <div>
+                <picture>
+                  <img
+                    src="./images/lower_omo_valley.jpg"
+                    aria-labelledby="title"
+                    alt="lower omo valley photo"
+                    role="hetritage picture"
+                    loading="lazy"
+                  />
+                </picture>
+              </div>
+            </div>
+            <div class="bottom__section">
+              <div>
+                <span id="title" aria-label="name of the heritage"
+                  >Lower omo valley</span
+                >
+              </div>
+              <div>
+                <span class="heritage__stars" aria-label="customers rating"
+                  >⭐⭐⭐⭐⭐</span
+                >
+              </div>
+              <div>
+                <b class="heritage__price" aria-label="currency">USD $$</b>
+                <span class="heritage__price" aria-label="one time package price"
+                  >1999.99</span
+                >
+              </div>
+
+              <div class="button__container">
+                <a href="/siteDetail.html">
+                  <button class="reserve-button" aria-label="reserve a spot">
+                    Reserve
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section aria-label="heritages">
+          <div>
+            <div class="heritage__image">
+              <div>
+                <picture>
+                  <img
+                    src="./images/tutufela.webp"
+                    aria-labelledby="title"
+                    alt="tutufela photo"
+                    role="hetritage picture"
+                    loading="lazy"
+                  />
+                </picture>
+              </div>
+            </div>
+            <div class="bottom__section">
+              <div>
+                <span id="title" aria-label="name of the heritage"
+                  >Tutufela rocks</span
+                >
+              </div>
+              <div>
+                <span class="heritage__stars" aria-label="customers rating"
+                  >⭐⭐⭐⭐⭐</span
+                >
+              </div>
+              <div>
+                <b class="heritage__price" aria-label="currency">USD $$</b>
+                <span class="heritage__price" aria-label="one time package price"
+                  >2939.99</span
+                >
+              </div>
+
+              <div class="button__container">
+                <a href="/siteDetail.html">
+                  <button class="reserve-button" aria-label="reserve a spot">
+                    Reserve
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section aria-label="heritages">
+          <div>
+            <div class="heritage__image">
+              <div>
+                <picture>
+                  <img
+                    src="./images/Fasilides.jpg"
+                    aria-labelledby="title"
+                    alt="Fasilides photo"
+                    role="hetritage picture"
+                    loading="lazy"
+                  />
+                </picture>
+              </div>
+            </div>
+            <div class="bottom__section">
+              <div>
+                <span id="title" aria-label="name of the heritage"
+                  >King Fasilides</span
+                >
+              </div>
+              <div>
+                <span class="heritage__stars" aria-label="customers rating"
+                  >⭐⭐⭐⭐⭐</span
+                >
+              </div>
+              <div>
+                <b class="heritage__price" aria-label="currency">USD $$</b>
+                <span class="heritage__price" aria-label="one time package price"
+                  >2939.99</span
+                >
+              </div>
+
+              <div class="button__container">
+                <a href="/siteDetail.html">
+                  <button class="reserve-button" aria-label="reserve a spot">
+                    Reserve
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <div class="message">
+        <hgroup>
+          <h2><em>Urgent Notice</em></h2>
+          <p>
+            <em
+              >Due to current civil unrest in North Ethiopia, we are only
+              offering tours visiting the Southern regions at this time.
+            </em>
+            <!-- Take one of our
+            Ethiopia tours to experience some of the tallest peaks in Africa,
+            the Simien Mountains, or venture to the desert and the Danakil
+            Depression, one of the lowest points of elevation on land in the
+            world. Take a tour of the Historic Route, visit medieval rock-hewn
+            churches in Lalibela, and learn about the impact of the crusades on
+            this nation. Visit the ruins of Aksum, Fasilides Castle in Gondar,
+            or travel south to the Omo Valley region for a cultural encounter
+            with the native tribes who inhabit the valley. The Bale Mountains
+            also invite guests to explore their majestic peaks. Learn about
+            colorful Ethiopian celebrations, including the Feast of Epiphany.
+            Certainly, a trip to Ethiopia in 2023 or 2024 is an excellent
+            choice. Contact one of our Ethiopian travel specialists to help you
+            build your dream trip to Ethiopia. -->
+          </p>
+        </hgroup>
+      </div>
+    </main>
+
+    <footer>
+      <div class="footer__container">
+        <div class="footer__upper">
+          <div class="footer__item">
+            <h3>Packages</h3>
+            <div>
+              <p>Family</p>
+              <p>Just Married</p>
+              <p>Birth Day</p>
+              <p>Union</p>
+              <p>Group</p>
+            </div>
+          </div>
+
+          <div class="footer__item">
+            <h3>Car Service</h3>
+            <div>
+              <p>Rental</p>
+              <p>Guide</p>
+              <p>Protection</p>
+            </div>
+          </div>
+
+          <div class="footer__item">
+            <h3>Help</h3>
+            <div>
+              <p>FAQ's</p>
+              <p>Contact Us</p>
+              <p>Map</p>
+            </div>
+          </div>
+
+          <div class="footer__item">
+            <h3>Follow us</h3>
+            <i class="fa-brands fa-square-facebook"></i>
+            <i class="fa-brands fa-square-twitter"></i>
+            <i class="fa-brands fa-square-instagram"></i>
+            <i class="fa-brands fa-telegram"></i>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <a href="">License and Aggrements</a>
+        </div>
+      </div>
+    </footer>
+    <script src="./script/index.js"></script>
+    <script
+      src="https://kit.fontawesome.com/e9b8ee98a2.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

@@ -2,148 +2,161 @@
 <html lang="en">
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" /><link rel="icon" type="image/x-icon" href="./images/page_icon.ico">
     <meta http-equiv="content-language" content="en" />
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/adminstration.css" />
     <title>Adminstration </title>
 
 </head>
 <body>
-    <header>
-        <div>
-            <nav >
+    <header class="header">
+        <div class="header__child">
+            <nav class="header__child__navigation" >
                 <div>
                     <a href="/">
                     <picture>
-                        <img src="./images/tour_ethiopia_logo.png" alt="Tour Ethiopia logo" />
+                        <img class="logo" src="./images/tour_ethiopia_logo.png" alt="Tour Ethiopia logo" />
                     </picture>
                 </a>
                 </div>
-                </div>
-                <a href="/index.html">Customer View</a>
+            
                 <div><h1>Adminstration</h1></div>
-            </nav>
+                <div>
+                </nav>
+                </div>
+            
+                
+            
         </div>
     </header>
     
     <main>
-        <div>
-            <h1>
+        <div class="main-container">
+            <h1 class="main-container__title">
                 Heritage Management
             </h1>
-            <a href="/postheritage.html">Add new Heritage</a>
-            <table>
-                <tr>
-                    <th>Name</th>
-                    <th>Description</th>
-                    <th>Detail</th>
-                    <th>Actions</th>
+            <div class="add-new">
+                <a class="add-new-heritage" href="/postheritage.html">Add new Heritage</a>
+            </div>
+            
+            <table class="table" id="albums" cellspacing="0">
+                <thead>
+                    <tr class="table__head" >
+                    <th class="table__head__title">Name</th>
+                    <th class="table__head__title">Description</th>
+                    <th class="table__head__title">Detail</th>
+                    <th class="table__head__title">Actions</th>
                 </tr>
-                <tr>
+                </thead>
+                
+                <tbody class="table__body table__body--purple">
+                    <tr class="table__body__row">
                     <td>Lalibela</td>
                     <td>Lalibela is a town in the Amhara region of northern Ethiopia. It's known for its distinctive rock-cut churches dating from the 12th and 13th centuries, which are pilgrimage sites for Coptic Christians. Carved out of rock, the subterranean monoliths include huge Bete Medhane Alem, and cross-shaped Bete Giyorgis. Many are joined by tunnels and trenches, and some have carved bas-reliefs and colored frescoes inside.</td>
                     <td>Detail</td>
                     <td>
-                        <Button>Edit</Button>
-                        <button>Delete</button>
+                        <button class="edit">Edit</button>
+                        <button class="delete">Delete</button>
                     </td>
                 </tr>
-                <tr>
+                <tr class="table__body__row">
                     <td>Aksum</td>
-                    <td>ksum is a city in northern Ethiopia. It's known for its tall, carved obelisks, relics of the ancient Kingdom of Aksum. Most are in the northern Stelae Park, including a huge fallen pillar, now in pieces. Centuries-old St. Mary of Zion is a Christian church and pilgrimage site believed to have housed the biblical Ark of the Covenant. The neighboring Chapel of the Tablet is said to contain the Ark today.</td>
+                    <td>Aksum is a city in northern Ethiopia. It's known for its tall, carved obelisks, relics of the ancient Kingdom of Aksum. Most are in the northern Stelae Park, including a huge fallen pillar, now in pieces. Centuries-old St. Mary of Zion is a Christian church and pilgrimage site believed to have housed the biblical Ark of the Covenant. The neighboring Chapel of the Tablet is said to contain the Ark today.</td>
                     <td>Detail</td>
                     <td>
-                        <Button>Edit</Button>
-                        <button>Delete</button>
+                        <button class="edit">Edit</button>
+                        <button class="delete">Delete</button>
                     </td>
                 </tr>
-                <tr>
+                <tr class="table__body__row">
                     <td>Tutufela</td>
                     <td>There are an estimated 10,000 stelae (obelisks) scattered across the South of Ethiopia. These obelisks are essentially grave stones. The Tutu Fela Stelae Field is one of the most impressive archaeological sites out of the 50 or so fields known in the Gedea Zone. It has around 300 stelae, some of which are phallic stelae, thought to date from the 9th century and some of which are anthropomorphic stelae, which are believed to be from the 12th century. Excavation at the site has revealed artefacts ranging from iron and copper bracelets to pottery, beads and tools, which were buried alongside the occupant.</td>
                     <td>Detail</td>
                     <td>
-                        <Button>Edit</Button>
-                        <button>Delete</button>
+                        <button class="edit">Edit</button>
+                        <button class="delete">Delete</button>
                     </td>
                 </tr>
-                <tr>
+                <tr class="table__body__row">
                     <td>Konso</td>
                     <td>Konso Cultural Landscape is an arid property of stone walled terraces and fortified settlements in the Konso highlands of Ethiopia. It constitutes a spectacular example of a living cultural tradition stretching back 21 generations (more than 400 years) adapted to its dry hostile environment. The landscape demonstrates the shared values, social cohesion and engineering knowledge of its communities. The site also features anthropomorphic wooden statues - grouped to represent respected members of their communities and particularly heroic events - which are an exceptional living testimony to funerary traditions that are on the verge of disappearing. Stone steles in the towns express a complex system of marking the passing of generations of leaders.</td>
                     <td>Detail</td>
                     <td>
-                        <Button>Edit</Button>
-                        <button>Delete</button>
+                        <button class="edit">Edit</button>
+                        <button class="delete">Delete</button>
                     </td>
                 </tr>
-                <tr>
+                <tr class="table__body__row">
                     <td>Simien National Park</td>
                     <td>Simien Mountains National Park is in northern Ethiopia. Its rugged terrain includes escarpments, deep valleys and a high plateau, home to rare Walia ibex and Gelada baboons. Tall peaks include the towering Ras Dashen mountain. Trails wind through the park to camps at Sankaber, Geech and Chenek. The central Gidir Got and Imet Gogo summit lookouts have panoramic views of sheer cliffs and the lowlands below.</td>
                     <td>Detail</td>
                     <td>
-                        <Button>Edit</Button>
-                        <button>Delete</button>
+                        <button class="edit">Edit</button>
+                        <button class="delete">Delete</button>
                     </td>
                 </tr>
-                <tr>
+                <tr class="table__body__row">
                     <td>Lower Valley of the Awash</td>
                     <td>The Awash valley contains one of the most important groupings of palaeontological sites on the African continent. The remains found at the site, the oldest of which date back at least 4 million years, provide evidence of human evolution which has modified our conception of the history of humankind. The most spectacular discovery came in 1974, when 52 fragments of a skeleton enabled the famous Lucy to be reconstructed.</td>
                     <td>Detail</td>
                     <td>
-                        <Button>Edit</Button>
-                        <button>Delete</button>
+                        <button class="edit">Edit</button>
+                        <button class="delete">Delete</button>
                     </td>
                 </tr>
+                </tbody>
+                
             </table>
 
         </div>
     </main>
 
-    <footer >
-	<div>
-        <h1 hidden>footer section</h1>
-        <h2 hidden>footer title</h2>
-		<div>
+    <footer>
+      <div class="footer-container" >
+        <div class="footer-upper">
+          <div class="footer-item">
+            <h3>Packages</h3>
             <div>
-                <h3 >Packages</h3>
-                <div>
-                    <p>Family</p>
-                    <p>Just Married</p>
-                    <p>Birth Day</p>
-                    <p>Union</p>
-                    <p>Group</p>
-                </div>
-			</div>
-
-            <div>
-                <h3 >Car Service</h3>
-                <div>
-                    <p>Rental</p>
-                    <p>Guide</p>
-                    <p>Protection</p>
-                </div>
-			</div>
-
-            <div>
-                <h3 >Help</h3>
-                <div>
-                    <p>FAQ's</p>
-                    <p>Contact Us</p>
-                    <p>Map</p>
-                </div>
-			</div>
-
-            <div>
-                <h3>Follow us</h3>
-                <a href="">Facebook</a>
-                <a href="">Twitter</a>
-                <a href="">Instagram</a>
-                <a href="">Telegram</a>
+              <p>Family</p>
+              <p>Just Married</p>
+              <p>Birth Day</p>
+              <p>Union</p>
+              <p>Group</p>
             </div>
-		</div>
-        <div>
-            <a href="">License and Aggrements</a>
-        </div>
-	</div>
+          </div>
 
+          <div class="footer-item">
+            <h3>Car Service</h3>
+            <div>
+              <p>Rental</p>
+              <p>Guide</p>
+              <p>Protection</p>
+            </div>
+          </div>
+
+          <div class="footer-item">
+            <h3>Help</h3>
+            <div>
+              <p>FAQ's</p>
+              <p>Contact Us</p>
+              <p>Map</p>
+            </div>
+          </div>
+
+          <div class="footer-item">
+            <h3>Follow us</h3>
+            <i class="fa-brands fa-square-facebook"></i>
+            <i class="fa-brands fa-square-twitter"></i>
+            <i class="fa-brands fa-square-instagram"></i>
+            <i class="fa-brands fa-telegram"></i>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <a href="">License and Aggrements</a>
+        </div>
+      </div>
     </footer>
+    <script src="https://kit.fontawesome.com/e9b8ee98a2.js" crossorigin="anonymous"></script>
 </body>
 </html>

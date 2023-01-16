@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+    />
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <link rel="icon" type="image/x-icon" href="./images/page_icon.ico" />
+    <meta http-equiv="content-language" content="en" />
+    <title>About US</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/about.css" />
+  </head>
+  <body>
+       <header>
+      <div>
+        <nav>
+          <div class="upper">
+            <a href="/">
+              <picture>
+                <img
+                  id="logo-image"
+                  src="./images/tour_ethiopia_logo.png"
+                  alt="Tour Ethiopia logo"
+                />
+              </picture>
+            </a>
+            <div>
+              <form
+                role="search"
+                action="/Search"
+                id="search-box"
+                title="search box"
+                class="search-form"
+              >
+              <label for="search__input"  style="color: rgb(0, 0, 0); display:none; background-color: rgb(255, 255, 255);" >search</label>
+                <input id="search__input" type="text"  placeholder="Search" />
+
+                <button
+                  type="submit"
+                  formaction="/Search"
+                  title="submit"
+                  id="submitt"
+                  name="submit"
+                  aria-label="Search"
+                >
+                  Search
+                </button>
+              </form>
+            </div>
+          </div>
+          <div class="lower">
+            <div class="right">
+              <a class="links" href="/index.html" > Home </a>
+              <a class="links" href="/contact.html"> Contact-Us </a>
+              <a class="links" href="/about.html" id="current__page"> About Us </a>
+              <a class="links" href="/"> Packages </a>
+              <a class="admin__link" href="./adminstration.html">
+                .<i class="fa-solid fa-lock"></i
+              ></a>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main class="main-container">
+      <div class="main-container__upper-container">
+        <hgroup>
+          <h1>About us</h1>
+          <p>
+            From the remote wilderness of Afar to vibrant Addis Ababa, an
+            Ethiopia vacation is what you make it. Discover Afar's volcanic
+            wonders, satisfy your inner child in Bales's theme parks, be lost
+            for words on the Aksum, or enjoy a Abay. We've got you covered with
+            the best adventure packages in the Ethiopia, and a guide to the best
+            times to visit the Land of the Free.
+          </p>
+        </hgroup>
+      </div>
+
+      <div>
+        <picture class="banner">
+          <img
+            class="banner__image"
+            src="./images/our_office.jpg"
+            alt="our office"
+          />
+        </picture>
+      </div>
+      <div class="quote-container">
+        <div class="quote-container__detail">
+          <hgroup>
+            <h2>WHY TO CHOOSE US?</h2>
+            <h3>Attention to Details</h3>
+            <p>
+              It’s our attention to the small stuff, scheduling of timelines and
+              keen project management that makes us stand out from the rest. We
+              are creative, while keeping a close eye on the calendar and your
+              budget.
+            </p>
+
+            <h3>A Plan for Success</h3>
+            <p>
+              You want results. We have found that the best way to get them is
+              with up front research – of your company, competitors, target
+              market and customer psychographics. Only after we fully understand
+              you and your customers, do we recommend a plan of attack.
+            </p>
+
+            <h3>Creativity</h3>
+            <p>
+              We bring our diverse background of advertising, design, branding,
+              public relations, research and strategic planning to work for your
+              company. Not only will your materials look great – they will get
+              results.
+            </p>
+          </hgroup>
+          <div>
+            <div>
+              <hgroup>
+                <h2>Where are we?</h2>
+                <ul>
+                  <li>Location: Addis Ababa</li>
+                  <li>Email: tourethiopia@gmail.com</li>
+                  <li>Phone: +251 935 45 43 15</li>
+                </ul>
+              </hgroup>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="values-picture">
+            <picture>
+              <source media="(min-width:650px)" srcset="./images/honesty.jpg" />
+              <img
+                src="./images/honesty.jpg"
+                alt="honesty trust testimonies"
+                style="width: 300px"
+              />
+            </picture>
+          </div>
+          <div >
+            <audio controls>
+              <source src="./audio/audio.mp3" type="audio/mpeg" />
+              <track
+                src="./vtt/audio.vtt"
+                kind="subtitles"
+                srclang="en"
+                label="English"
+              />
+              Your browser does not support the audio element.
+            </audio>
+            <details>
+              <summary>Transcript</summary>
+
+              <p class="audio-transcript">
+                We are the most known reliable travel agents in Ethiopia. We are
+                here to make your journey happy.
+              </p>
+            </details>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="footer__container">
+        <div class="footer__upper">
+          <div class="footer__item">
+            <h3>Packages</h3>
+            <div>
+              <p>Family</p>
+              <p>Just Married</p>
+              <p>Birth Day</p>
+              <p>Union</p>
+              <p>Group</p>
+            </div>
+          </div>
+
+          <div class="footer__item">
+            <h3>Car Service</h3>
+            <div>
+              <p>Rental</p>
+              <p>Guide</p>
+              <p>Protection</p>
+            </div>
+          </div>
+
+          <div class="footer__item">
+            <h3>Help</h3>
+            <div>
+              <p>FAQ's</p>
+              <p>Contact Us</p>
+              <p>Map</p>
+            </div>
+          </div>
+
+          <div class="footer__item">
+            <h3>Follow us</h3>
+            <i class="fa-brands fa-square-facebook"></i>
+            <i class="fa-brands fa-square-twitter"></i>
+            <i class="fa-brands fa-square-instagram"></i>
+            <i class="fa-brands fa-telegram"></i>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <a href="">License and Aggrements</a>
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://kit.fontawesome.com/e9b8ee98a2.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
