@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Tour Ethiopia. For Day Trips & Excursion</title>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+        />
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <link rel="icon" type="image/x-icon" href="./images/page_icon.ico" />
+        <meta http-equiv="content-language" content="en" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="./node_modules/font-awesome/css/all.min.css"
+        />
+        <link
+            rel="stylesheet"
+            href="node_modules/bootstrap/dist/css/bootstrap.css"
+        />
+        <link
+            rel="stylesheet"
+            href="node_modules/bootstrap/dist/css/bootstrap-p.css"
+        />
+        <link rel="icon" type="image/x-icon" href="./images/page_icon.ico" />
+    </head>
+
+    <body>
+        <header class="container-fluid m-0 p-0">
+            <div class="container-fluid m-0 p-0">
+                <div class="container-fluid justify-content-center row m-0 p-2">
+                    <div class="container row d-flex justify-content-between">
+                        <a class="col" href="/">
+                            <picture>
+                                <img
+                                    id="logo-image"
+                                    src="./images/tour_ethiopia_logo.png"
+                                    alt="Tour Ethiopia logo"
+                                    height="60px"
+                                />
+                            </picture>
+                        </a>
+                        <div class="col d-flex justify-content-end">
+                            <form
+                                class="d-flex"
+                                role="search"
+                                action="/Search"
+                                id="search-box"
+                                title="search box"
+                                class="search-form"
+                                style="height: 28px"
+                            >
+                                <label
+                                    for="search__input"
+                                    class="form-label text-dark d-none bg-white"
+                                    
+                                    >search</label
+                                >
+                                <input
+                                    id="search__input"
+                                    type="text"
+                                    class="form-control rounded-0"
+                                    placeholder="Search"
+                                />
+
+                                <button
+                                    type="submit"
+                                    formaction="/Search"
+                                    title="submit"
+                                    id="submitt"
+                                    name="submit"
+                                    class="btn btn-dark rounded-0 py-0"
+                                    aria-label="Search"
+                                >
+                                    Search
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="container row">
+                        <nav class="d-flex justify-content-end">
+                            <a
+                                class="navlink text-decoration-none   px-1"
+                                href="/index.html"
+                                id="current__page"
+                            >
+                                Home
+                            </a>
+                            <a
+                                class="navlink bg-dark text-white text-decoration-none px-1"
+                                href="/contact.html"
+                            >
+                                Contact
+                            </a>
+                            <a
+                                class="navlink text-decoration-none px-1"
+                                href="/about.html"
+                            >
+                                About</a
+                            >
+                            <a
+                                class="navlink text-decoration-none px-1"
+                                href="/"
+                            >
+                                Packages
+                            </a>
+                            <a
+                                class="navlink text-decoration-none hover"
+                                href="/adminstration.html"
+                            >
+                                .<i class="fa-solid fa-lock"></i
+                            ></a>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="container my-5">
+            <div class="main-container">
+
+                <div class="container d-flex justify-content-center row row-cols-lg-2 row-cols-1 ">
+  <form id="form" name="form" class="form"  novalidate action="#" onsubmit="validity()">
+    <h1 class="text-center">Contact US</h1>
+
+    <label class="form-label " for="name">* Name</label>
+    <input  required minlength="10" class="form-control" type="text" id="name" name="name" placeholder="Your name" >
+    <div class="invalid-feedback">Name must have more than 10 characters</div>
+
+    <label class="form-label" for="email">* Email</label>
+    <input required  class="form-control" type="text" placeholder="Email address" id="email" name="email" >
+    <div class="invalid-feedback">Invalid email</div>
+
+    <label class="form-label"  for="phone">* Phone</label>
+    <input required minlength="10" class="form-control" type="text" placeholder="Phone number" id="phone" name="phone" >
+    <div class="invalid-feedback">Phone must have more than 10 characters</div>
+    
+    <label class="form-label" for="subject">* Message</label>
+    <textarea class="form-control" minlength="50" placeholder="Your message" cols="132" rows="5" name="subject" id="subject"></textarea>
+    <div class="invalid-feedback">Message must have more than 50 characters</div>
+<button id="contact__button" class="btn btn-primary" type="submit" value="Submit">Submit</button>
+  </form>
+</div>
+            </div>
+        </main>
+
+        <footer class="row px-0 mx-0 container-fluid">
+            <div class="row px-0 mx-0 container-fluid">
+                <div
+                    class="row bg-success text-white row-cols-1 row-cols-sm-4 px-0 mx-auto text-dark py-3 d-flex justify-content-center"
+                >
+                    <div
+                        class="col flex-shrink-1  flex-grow-1 my-3 d-flex flex-column mx-auto align-items-md-center d-sm-flex align-items-center"
+                        style="width: 250px; "
+                        aria-label="services"
+                    >
+                        <h3>Packages</h3>
+                        <div>
+                            <p>Family</p>
+                            <p>Just Married</p>
+                            <p>Birth Day</p>
+                            <p>Union</p>
+                            <p>Group</p>
+                        </div>
+                    </div>
+
+                    <div
+                        class="col flex-shrink-1 flex-grow-1 my-3 d-flex flex-column mx-auto align-items-md-center d-sm-flex align-items-center"
+                    >
+                        <h3>Car Service</h3>
+                        <div>
+                            <p>Rental</p>
+                            <p>Guide</p>
+                            <p>Protection</p>
+                        </div>
+                    </div>
+
+                    <div
+                        class="col flex-shrink-1 flex-grow-1 my-3 d-flex flex-column mx-auto align-items-md-center d-sm-flex align-items-center"
+                    >
+                        <h3>Help</h3>
+                        <div>
+                            <p>FAQ's</p>
+                            <p>Contact Us</p>
+                            <p>Map</p>
+                        </div>
+                    </div>
+
+                    <div
+                        class="col flex-shrink-1 fs-5 flex-grow-1 my-3 d-flex flex-column mx-auto align-items-md-center d-sm-flex align-items-center"
+                        style="width: 250px; "
+                        aria-label="services"
+                        aria-label="services"
+                    >
+                        <h3>Follow us</h3>
+                        <div>
+                            <i class="fa-brands fa-square-facebook"></i>
+                            <i class="fa-brands fa-square-twitter"></i>
+                            <i class="fa-brands fa-square-instagram"></i>
+                            <i class="fa-brands fa-telegram"></i>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="row bg-dark px-0 mx-0"
+                >
+                    <a
+                        href=""
+                        class="py-1 px-0 fs-6 text-decoration-none link-light text-center m-0"
+                        >License and Aggrements</a
+                    >
+                </div>
+            </div>
+        </footer>
+<script>
+  const validity= (evt)=>{
+    const form = document.getElementById('form')
+      ;
+      
+      form.addEventListener('submit', evt => {
+        console.log("kebede")
+        evt.preventDefault()
+        if(!form.checkValidity()){
+          evt.preventDefault()
+        }
+        form.classList.add('was-validated')
+      })
+  }
+      const form = document.getElementById('form')
+      
+      form.addEventListener('submit', evt => {
+        evt.preventDefault()
+        if(!form.checkValidity()){
+          evt.preventDefault()
+        }
+        form.classList.add('was-validated')
+      })
+    </script>
+        <script src="./script/index.js"></script>
+        <script
+            src="https://kit.fontawesome.com/e9b8ee98a2.js"
+            crossorigin="anonymous"
+        >
+      </script>
+        <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    </body>
+</html>
